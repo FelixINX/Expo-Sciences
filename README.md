@@ -32,4 +32,16 @@ Le code utilisé dans la présentation PowerPoint est le suivant;
     
 *Le code n'est pas complet, veuillez regardez le fichier au complet [ici](https://github.com/felixinx/Expo-Science/blob/master/pifm.c).*
 
+**Pour ajouter le scipt au démarrage**
+
+Lancer le terminal et exécuter;
+
+    chmod 755 launch.sh   #Permission au fichier
+    mkdir logs            #Création d'un dossier "logs"
+	sudo crontab -e       #Ouverture du fichier Démarrage à l'aide de NANO
+    #Ajouter la ligne suivante à la fin du fichier
+	@reboot sh /home/pi/pifm/launch.sh >/home/pi/pifm/logs/cronlog 2>&1
+    #Modifier au besoin selon les emplacements de vos fichiers
+
+
 Merci!
