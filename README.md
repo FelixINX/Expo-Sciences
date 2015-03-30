@@ -1,8 +1,10 @@
 # Expo-Sciences #
 
-**Une copie des scripts utilisés lors de la présentation Powerpoint durant l'expo-science.**
+*Je participe aussi à [Crée Ta Ville](http://www.creetaville.com/)*
 
-[PiFM](http://www.icrobotics.co.uk/wiki/index.php/Turning_the_Raspberry_Pi_Into_an_FM_Transmitter) original, rien d'autre.
+**Une copie des scripts utilisés lors de la présentation Powerpoint durant l'expo-science, et Crée Ta Ville.**
+
+[PiFM](http://www.icrobotics.co.uk/wiki/index.php/Turning_the_Raspberry_Pi_Into_an_FM_Transmitter), rien d'autre.
 
 Licence [GPU GENERAL PUBLIC LICENCE](http://www.gnu.org/copyleft/gpl.html).
 
