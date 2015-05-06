@@ -10,7 +10,7 @@ Licence [GPU GENERAL PUBLIC LICENCE](http://www.gnu.org/copyleft/gpl.html).
 
 Le code utilisé dans la présentation PowerPoint est le suivant;
 
-**PiFM.c**
+**PiFM.cpp**
 
     // GPIO setup macros. Always use INP_GPIO(x) before using OUT_GPIO(x) or SET_GPIO_ALT(x,y) 
     #define INP_GPIO(g) *(gpio+((g)/10)) &= ~(7<<(((g)%10)*3)) 
