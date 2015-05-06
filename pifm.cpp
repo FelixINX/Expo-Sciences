@@ -659,20 +659,18 @@ int main(int argc, char **argv)
 {
     
     if (argc>1) {
+		fprintf(stderr, "Lecture en cours...\n");
       setup_fm();
       setupDMA(argc>2?atof(argv[2]):103.3);
       playWav(argv[1], argc>3?atof(argv[3]):22050, argc>4);
-	  fprintf(stderr, "Lecture en cours...\n");
+	  
 	}
 	else {
 
-		fprintf(stderr, "Usage:   sudo ./pifm wavfile.wav [freq] [sample rate] [stereo]\n\nOu wavfile est un fichier WAV de 16 bit 22.5kHz Stereo.  Utilisez «-» pour utiliser stdin.\nfreq est la fr%lcquence FM à utiliser. Veuillez choisir une fr%lcquence libre! Elle est en Mhz. Si vous mettez rien, la fréquence sera 103.3 (par d%lcfault)\n\nScript par l'ICRS et modifié par FelixINX. \nSource code disponible sur github.com/felixinx/expo-sciences\n", accent_aigu);
+		fprintf(stderr, "Usage:   sudo ./pifm wavfile.wav [freq] [sample rate] [stereo]\n\nOu wavfile est un fichier WAV de 16 bit 22.5kHz Stereo.  Utilisez «-» pour utiliser stdin.\nfreq est la fréquence FM à utiliser. Veuillez choisir une fréquence libre! Elle est en Mhz. Si vous mettez rien, la fréquence sera 103.3 (par défault)\n\nScript par l'ICRS et modifié par FelixINX. \nSource code disponible sur github.com/felixinx/expo-sciences\n\nA noter que tous que tout les É sont des accents aigus, ou autre truc français que l\'ordi comprend pas!\n");
 
 		return 0;
 	}
 } // main
-
-wchar_t accent_aigu[50] = L"\x82";
-fgetws(texte, 50, stdin);
 
 
