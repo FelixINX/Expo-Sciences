@@ -4,7 +4,7 @@
 
 **Une copie des scripts utilisés lors de la présentation Powerpoint durant l'expo-science, et Crée Ta Ville.**
 
-[PiFM *par ](https://github.com/rm-hull/pifm), modifié en français.
+[PiFM *par rm-hull* ](https://github.com/rm-hull/pifm), modifié en français.
 
 Licence [GPU GENERAL PUBLIC LICENCE](http://www.gnu.org/copyleft/gpl.html).
 
@@ -44,6 +44,21 @@ Lancer le terminal et exécuter;
     #Ajouter la ligne suivante à la fin du fichier
 	@reboot sh /home/pi/pifm/launch.sh >/home/pi/pifm/logs/cronlog 2>&1
     #Modifier au besoin selon les emplacements de vos fichiers
+    
+**Veuillez être sûr que le fichier `launch.sh` est correct**
+
+*`launch.sh`*
+
+	#->PiFM
+	# Jouer le son
+	# Vérifier bien le deuxième CD pour être sûr qu'il est à la bonne place.
+	# Retour à home
+	cd /
+	cd home/pi/desktop/pifm
+	sudo ./pifm sound.wav 106.5
+	cd ..
+
+
 
 ##TODO
 - [x] Traduire en français (*voir le prochain*)
