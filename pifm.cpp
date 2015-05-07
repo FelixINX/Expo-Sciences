@@ -567,7 +567,7 @@ void playWav(char* filename, float samplerate, bool stereo)
 }
 
 void unSetupDMA(){
-    printf("exiting\n");
+    printf("Fin de la lecture.\n");
     struct DMAregs* DMA0 = (struct DMAregs*)&(ACCESS(DMABASE));
     DMA0->CS =1<<31;  // reset dma controller
     
@@ -667,7 +667,7 @@ int main(int argc, char **argv)
 	}
 	else {
 
-		fprintf(stderr, "Usage:   sudo ./pifm wavfile.wav [freq] [sample rate] [stereo]\n\nOu wavfile est un fichier WAV de 16 bit 22.5kHz Stereo.  Utilisez «-» pour utiliser stdin.\nfreq est la fréquence FM à utiliser. Veuillez choisir une fréquence libre! Elle est en Mhz. Si vous mettez rien, la fréquence sera 103.3 (par défault)\n\nScript par l'ICRS et modifié par FelixINX. \nSource code disponible sur github.com/felixinx/expo-sciences\n\nA noter que tous que tout les É sont des accents aigus, ou autre truc français que l\'ordi comprend pas!\n");
+		fprintf(stderr, "Usage:   sudo ./pifm wavfile.wav [freq] [sample rate] [stereo]\n\nOu wavfile est un fichier WAV de 16 bit 22.5kHz Stereo.  Utilisez Â«-Â» pour utiliser stdin.\nfreq est la frÃ©quence FM Ã  utiliser. Veuillez choisir une frÃ©quence libre! Elle est en Mhz. Si vous mettez rien, la frÃ©quence sera 103.3 (par dÃ©fault)\n\nScript par l'ICRS et modifiÃ© par FelixINX. \nSource code disponible sur github.com/felixinx/expo-sciences\n\nA noter que tous que tout les Ã‰ sont des accents aigus, ou autre truc franÃ§ais que l\'ordi comprend pas!\n");
 
 		return 0;
 	}
